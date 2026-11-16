@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spazio61 Home &amp; Office | Marcenaria em Brasília</title>
+<meta name="description" content="Marcenaria e móveis planejados de alto padrão em Brasília. Fábrica própria e showroom na Asa Sul. Fale com a Spazio61 pelo WhatsApp.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="img/logo-spazio61.webp" type="image/webp">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- secao: abertura -->
+<div class="cortina" id="cortina" aria-hidden="true">
+  <img src="img/logo-spazio61.webp" width="150" height="150" alt="">
+</div>
+
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="cab" id="cab" data-tema="escuro">
+  <div class="cab__linha">
+    <a class="cab__logo" href="#topo" aria-label="Spazio61, início">
+      <img src="img/logo-spazio61.webp" width="150" height="150" alt="Logo Spazio61: círculo verde com as palavras spazio e 61 em branco">
+    </a>
+    <nav class="cab__nav" aria-label="Seções">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--cheio cab__cta" href="https://wa.me/5561991799102" target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- secao: hero -->
+<section class="hero tema-escuro" id="topo" data-tema="escuro" aria-label="Vídeo do showroom da Spazio61">
+  <div class="hero__midia">
+    <img class="hero__estatico" src="img/cristaleira-painel.webp" width="946" height="1196" alt="Cristaleira de vidro com moldura metálica e prateleiras iluminadas, ao lado de painéis de madeira escura e poltrona de couro" fetchpriority="high">
+    <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="img/cristaleira-painel.webp" aria-hidden="true" tabindex="-1">
+      <source src="video/video-showroom.mp4#t=3.5" type="video/mp4">
+    </video>
+    <div class="hero__veu"></div>
+  </div>
+  <div class="hero__grade">
+    <h1 class="hero__titulo">Marcenaria de alto padrão em Brasília</h1>
+    <div class="hero__centro">
+      <p class="hero__apoio">Móveis planejados para ambientes residenciais, corporativos e comerciais, feitos em fábrica própria em Brasília.</p>
+      <div class="hero__botoes">
+        <a class="btn btn--cheio" href="https://wa.me/5561991799102" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn" href="#portfolio">Ver portfólio</a>
+      </div>
+    </div>
+    <p class="hero__fecho">Fábrica própria e showroom na Asa Sul.</p>
+  </div>
+</section>
+
+<!-- secao: sobre -->
+<section class="sec sobre tema-claro" id="sobre" data-tema="claro" aria-labelledby="sobre-t">
+  <div class="cont sobre__grade">
+    <div class="sobre__texto rev">
+      <p class="eyebrow">Sobre a Spazio61</p>
+      <h2 id="sobre-t">Marcenaria com fábrica própria em Brasília</h2>
+      <p class="corpo">A Spazio61 Home &amp; Office produz móveis planejados de alto padrão para casas, escritórios e espaços comerciais. Cadeiras, sofás, mesas e poltronas também estão disponíveis.</p>
+      <ul class="lista-q">
+        <li>Fábrica própria em Brasília</li>
+        <li>Showroom na SRTVS 701, Asa Sul</li>
+        <li>Móveis planejados de alto padrão</li>
+        <li>Marcenaria em obras como Manhattan Shopping e CASACOR Goiás</li>
+      </ul>
+    </div>
+    <div class="sobre__moldura rev" id="moldura">
+      <img class="on" src="img/cristaleira-painel.webp" width="946" height="1196" alt="Cristaleira de vidro com moldura metálica e prateleiras iluminadas, ao lado de painéis de madeira escura e poltrona de couro" loading="lazy">
+      <img src="img/sala-paineis.webp" width="945" height="1214" alt="Sala de estar com painéis verticais de madeira clara na parede, sofá, duas poltronas e mesa de jantar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- secao: portfolio -->
+<section class="sec port tema-escuro" id="portfolio" data-tema="escuro" aria-labelledby="port-t">
+  <div class="cont">
+    <div class="port__topo rev">
+      <p class="eyebrow">Portfólio</p>
+      <h2 id="port-t">Ambientes planejados pela Spazio61</h2>
+      <p class="corpo">Obras com marcenaria da Spazio61: Manhattan Shopping e CASACOR Goiás.</p>
+    </div>
+    <!-- Para acrescentar uma foto, copie um <li> e troque src, width, height, alt e legenda. A grade cresce sozinha. -->
+    <ul class="grade" id="grade">
+      <li class="cartao rev">
+        <button type="button" class="cartao__abrir" data-lb>
+          <img src="img/cristaleira-painel.webp" width="946" height="1196" alt="Cristaleira de vidro com moldura metálica e prateleiras iluminadas, ao lado de painéis de madeira escura e poltrona de couro" loading="lazy">
+        </button>
+        <p class="cartao__leg">Cristaleira iluminada e painéis de madeira</p>
+      </li>
+      <li class="cartao rev">
+        <button type="button" class="cartao__abrir" data-lb>
+          <img src="img/sala-paineis.webp" width="945" height="1214" alt="Sala de estar com painéis verticais de madeira clara na parede, sofá, duas poltronas e mesa de jantar" loading="lazy">
+        </button>
+        <p class="cartao__leg">Sala com painéis de madeira</p>
+      </li>
+    </ul>
+    <div class="port__fim rev">
+      <a class="btn btn--cheio" href="https://wa.me/5561991799102" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<dialog class="lb" id="lb" aria-label="Foto ampliada">
+  <button type="button" class="lb__x" id="lbFechar" aria-label="Fechar">&times;</button>
+  <button type="button" class="lb__s lb__s--e" id="lbAnt" aria-label="Anterior">&lsaquo;</button>
+  <figure>
+    <img id="lbImg" width="946" height="1196" src="" alt="">
+    <figcaption id="lbLeg"></figcaption>
+  </figure>
+  <button type="button" class="lb__s lb__s--d" id="lbProx" aria-label="Próxima">&rsaquo;</button>
+</dialog>
+
+<!-- secao: videos -->
+<section class="sec vids tema-claro" id="videos" data-tema="claro" aria-label="Vídeos">
+  <div class="cont">
+    <article class="vbloco rev" aria-labelledby="v1-t">
+      <div class="vbloco__txt">
+        <h2 id="v1-t">Conheça a Spazio61</h2>
+        <p class="corpo">Vídeo de apresentação da empresa.</p>
+      </div>
+      <div class="vbloco__quadro">
+        <video controls controlslist="nodownload" playsinline preload="metadata" aria-labelledby="v1-t" data-vid>
+          <source src="video/video-apresentacao.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="vbloco__play btn btn--cheio" data-play><span>Assistir ao vídeo</span></button>
+      </div>
+    </article>
+    <article class="vbloco rev" aria-labelledby="v2-t">
+      <div class="vbloco__txt">
+        <h2 id="v2-t">Nossa fábrica em Brasília</h2>
+        <p class="corpo">Fábrica própria da Spazio61, em Brasília.</p>
+      </div>
+      <div class="vbloco__quadro">
+        <video controls controlslist="nodownload" playsinline preload="metadata" aria-labelledby="v2-t" data-vid>
+          <source src="video/video-fabrica.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="vbloco__play btn btn--cheio" data-play><span>Assistir ao vídeo</span></button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- secao: contato -->
+<section class="contato tema-escuro" id="contato" data-tema="escuro" aria-labelledby="ct-t">
+  <img class="contato__fundo" src="img/letreiro-corten.webp" width="983" height="1216" alt="Letreiro verde Spazio61 Home &amp; Office sobre parede de aço corten, com folhagens penduradas" loading="lazy">
+  <div class="contato__veu"></div>
+  <div class="contato__grade">
+    <aside class="trilho">
+      <img src="img/logo-spazio61.webp" width="150" height="150" alt="Logo Spazio61" loading="lazy">
+      <ul class="trilho__links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <address>
+        <p><a href="tel:+5561991799102">+55 61 99179-9102</a></p>
+        <p>SRTVS 701 Bloco B, Loja 02/03, Asa Sul, Brasília-DF, CEP 70340-000</p>
+        <p><a href="https://www.instagram.com/spazio.61/" target="_blank" rel="noopener">@spazio.61</a></p>
+      </address>
+    </aside>
+    <div class="contato__corpo rev">
+      <p class="eyebrow">Contato</p>
+      <h2 id="ct-t">Fale com a Spazio61</h2>
+      <p class="corpo">Converse com nossos consultores pelo WhatsApp ou visite o showroom na Asa Sul.</p>
+      <a class="btn btn--cheio" href="https://wa.me/5561991799102" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
