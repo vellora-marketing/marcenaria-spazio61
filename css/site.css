@@ -190,6 +190,13 @@ h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
 /* Após o primeiro play, o botão some e ficam os controles nativos */
 .vbloco__quadro.tocando .vbloco__play { display: none; }
 @media (min-width: 1024px) { .vbloco { grid-template-columns: 1fr 2fr; align-items: end; gap: 2rem; } }
+/* Vídeo vertical (apresentação, 9:16): moldura no formato do vídeo, nada cortado.
+   Até 900px: largura do conteúdo, limitada para caber inteira na tela abaixo do cabeçalho.
+   PC (> 900px): altura máx. ~80vh, centralizada na coluna. */
+.vbloco__quadro--vertical { aspect-ratio: 9 / 16; width: min(100%, calc((100svh - var(--cab-h) - 2rem) * 9 / 16)); justify-self: center; }
+.vbloco__quadro--vertical video { object-fit: contain; }
+.vbloco__quadro--vertical .vbloco__play { inset: 0; margin: auto; width: fit-content; height: fit-content; }
+@media (min-width: 901px) { .vbloco__quadro--vertical { width: auto; height: 80vh; max-width: 100%; justify-self: center; } }
 
 /* Contato */
 .contato { position: relative; overflow: hidden; min-height: 100svh; display: flex; }
