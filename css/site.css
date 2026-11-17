@@ -126,14 +126,10 @@ h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
   .hero__centro { align-self: center; justify-self: center; text-align: left; }
   .hero__fecho { justify-self: end; font-size: 1rem; }
 }
-/* Celular em pé: vídeo inteiro (16:9, sem corte) logo abaixo do cabeçalho; texto e botões embaixo, sobre fundo escuro */
+/* Celular em pé: só o enquadramento do vídeo de fundo (o layout não muda).
+   40% mantém o letreiro "spazio 61" da abertura e da cena final inteiro e ainda pega a cozinha nas cenas do showroom. */
 @media (max-width: 768px) and (orientation: portrait) {
-  .hero { min-height: 0; padding-top: var(--cab-h); }
-  .hero__midia { position: relative; inset: auto; width: 100%; aspect-ratio: 16 / 9; }
-  .hero__midia video { object-fit: contain; }
-  .hero__veu { display: none; }
-  .hero__grade { min-height: 0; padding: 1.25rem var(--m) calc(2rem + env(safe-area-inset-bottom)); grid-template-rows: auto; gap: 1.25rem; }
-  .hero__botoes { margin-top: 1.25rem; }
+  .hero__video { object-position: 40% 50%; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero__video { display: none; }
